@@ -45,7 +45,10 @@ Single-direction relationships; facts connect only through shared dimensions.
 - Revenue closed 0.98% (about ₹1.6M) below budget; budget achievement 99.0%
 - West accounts for roughly two-thirds of the shortfall, concentrated in Jul–Sep 2025
 - Gross profit variance (about −₹2.6M) is larger than the revenue miss because COGS also ran over budget, so it is a margin story as well as a sales story#
-- # Variance Convention / Positive = favourable. Revenue and profit variances are Actual − Budget; cost variances (COGS, Opex) are Budget − Actual.
+
+ ## Variance Convention
+
+Positive = favourable. Revenue and profit variances are Actual − Budget; cost variances (COGS, Opex) are Budget − Actual.
 
 ## Design
 Teal primary palette, grey for budget, red/green reserved for variance, left-aligned titles, consistent KPI card row on every page.
