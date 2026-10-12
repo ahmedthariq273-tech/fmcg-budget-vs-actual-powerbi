@@ -2,8 +2,17 @@
 
 An FP&A-style Budget vs Actual reporting pack for a fictional FMCG company, covering revenue, margin, variance, time intelligence, mix and unit economics across 4 regions and 5 product lines.
 
+**View the full report:** [FMCG_BvA_Dashboard.pdf](FMCG_BvA_Dashboard.pdf) (all pages, no software needed)
+
 ## Business Question
-Where are we against plan, what is driving the gap, and which region/product should management look at first?
+Where are we against plan, what is driving the gap, and which region and product should management look at first?
+
+## Repository Contents
+| Path | What it is |
+|---|---|
+| `FMCG_BvA_Dashboard.pdf` | Exported report, all pages |
+| `pbix/FMCG_BvA_Dashboard.pbix` | Power BI source file (model, DAX, visuals) |
+| `data/FMCG_Financial_Dataset.xlsx` | Synthetic dataset: Fct_Actuals and Fct_Budget sheets |
 
 ## Dataset (synthetic)
 Built by me in Excel 2016. No real company data is used.
@@ -31,7 +40,7 @@ Single-direction relationships; facts connect only through shared dimensions.
 | # | Page | Purpose |
 |---|---|---|
 | 1 | Executive Overview | KPIs, actual vs budget trend, region variance, product contribution |
-| 2 | Revenue & Margin Analysis | Revenue, gross profit, margin by product |
+| 2 | Revenue & Margin Analysis | Revenue, gross profit and margin by product |
 | 3 | Budget & Variance Analysis | Variance trend and variance by financial metric |
 | 4 | Regional Performance | Revenue, margin and variance by region |
 | 5 | Time Intelligence | YTD, YoY growth, monthly trends |
@@ -44,9 +53,9 @@ Single-direction relationships; facts connect only through shared dimensions.
 ## Key Findings (all regions, all years)
 - Revenue closed 0.98% (about ₹1.6M) below budget; budget achievement 99.0%
 - West accounts for roughly two-thirds of the shortfall, concentrated in Jul–Sep 2025
-- Gross profit variance (about −₹2.6M) is larger than the revenue miss because COGS also ran over budget, so it is a margin story as well as a sales story#
+- Gross profit variance (about −₹2.6M) is larger than the revenue miss because COGS also ran over budget, so it is a margin story as well as a sales story
 
- ## Variance Convention
+## Variance Convention
 
 Positive = favourable. Revenue and profit variances are Actual − Budget; cost variances (COGS, Opex) are Budget − Actual.
 
@@ -54,7 +63,8 @@ Positive = favourable. Revenue and profit variances are Actual − Budget; cost 
 Teal primary palette, grey for budget, red/green reserved for variance, left-aligned titles, consistent KPI card row on every page.
 
 ## How to Open
-Download `pbix/FMCG_BvA_Dashboard.pbix` and open in Power BI Desktop (free).
+- **Quick look:** open `FMCG_BvA_Dashboard.pdf` above.
+- **Full interactive report:** download `pbix/FMCG_BvA_Dashboard.pbix` and open it in Power BI Desktop (free). Drill-through works by right-clicking a region or product on the report pages.
 
 ## Tools
 Excel 2016 · Power BI Desktop · DAX · Power Query
